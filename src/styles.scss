@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply bg-gray-900 text-white
+}
+
+.btn {
+  @apply bg-gradient-to-br from-green-400 to-blue-500 py-2 px-4 text-gray-900 font-semibold rounded-md shadow-md cursor-pointer transition-transform
+  hover:scale-105
+  focus:from-green-500 focus:to-blue-600 focus:outline-none focus:scale-100
+}

@@ -1,0 +1,8 @@
+<ul
+  [ngClass]="isClosed ? 'hidden' : 'flex-col flex items-center fixed inset-0 left-1/4 uppercase bg-black/20 backdrop-blur-lg gap-8 p-8 pt-16 md:hidden'"
+>
+  <i class="material-icons" (click)="close()">close</i>
+  <li><a routerLink="">Home</a></li>
+  <li><a routerLink="">Test1</a></li>
+  <li><a routerLink="">Test2</a></li>
+</ul>
