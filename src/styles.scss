@@ -10,6 +10,14 @@ h1 {
   @apply font-semibold text-3xl;
 }
 
+h2 {
+  @apply font-semibold text-2xl;
+}
+
+p{
+  @apply text-lg text-gray-300;
+}
+
 .container{
   @apply max-w-screen-xl mx-auto overflow-hidden;
 }

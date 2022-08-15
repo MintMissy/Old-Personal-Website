@@ -1,3 +1,17 @@
-.container{
-  @apply p-8
+.container {
+  @apply p-4 pt-8 md:p-8;
+}
+
+.card--about {
+  @apply bg-gradient-to-br flex-1 from-gray-800 to-gray-900 py-8 px-6 rounded-lg text-center shadow-2xl transition-transform hover:scale-105;
+
+  i {
+    @apply text-4xl md:text-5xl scale-150 text-amber-400 text-accent-300 bg-gradient-to-b from-blue-300 to-green-400;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  h2 {
+    @apply mt-5 text-white/80 text-xl md:text-2xl;
+  }
 }
