@@ -1,8 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 export interface NavLink {
-  route:string;
-  text:string;
+  route: string;
+  text: string;
 }
 
 @Component({
@@ -12,6 +12,7 @@ export interface NavLink {
 })
 export class NavbarComponent {
   isClosed = true;
+  scrollOffset = 0;
   links: NavLink[] = [
     {
       route: '/',
@@ -30,6 +31,11 @@ export class NavbarComponent {
       text: 'Resume'
     }
   ]
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.scrollOffset = window.scrollY;
+  }
 
   toggleMenu() {
     this.isClosed = !this.isClosed;
