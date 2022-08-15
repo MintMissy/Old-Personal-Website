@@ -1,4 +1,5 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {NavLink} from "../navbar/navbar.component";
 
 @Component({
   selector: 'app-menu-items',
@@ -8,9 +9,9 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 export class MenuItemsComponent {
   @Output() closeMenu = new EventEmitter();
   @Input() isClosed!: boolean;
+  @Input() links!: NavLink[];
 
-  close(){
+  close() {
     this.closeMenu.emit();
   }
-
 }
