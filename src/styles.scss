@@ -14,11 +14,11 @@ h2 {
   @apply font-semibold text-2xl;
 }
 
-p{
+p {
   @apply text-lg text-gray-300;
 }
 
-.container{
+.container {
   @apply max-w-screen-xl mx-auto overflow-hidden;
 }
 
@@ -27,6 +27,17 @@ p{
   relative pl-6
   before:absolute before:left-0 before:top-0 before:-bottom-1 before:rounded-md before:w-2
   before:bg-gradient-to-b before:from-primary-400 before:to-secondary-500;
+}
+
+.underline-animation {
+  @apply
+  relative
+  before:absolute before:inset-x-0 before:-bottom-1 before:w-0 before:h-1 before:rounded-md before:mx-auto
+  before:transition-all before:bg-gradient-to-br before:from-primary-400 before:to-secondary-400;
+}
+
+.underline-animation:hover {
+  @apply before:w-full;
 }
 
 .btn {
