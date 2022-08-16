@@ -1,9 +1,17 @@
+@import "~src/styles";
+
 .container {
   @apply p-4 pt-8 md:p-8;
 }
 
 .card--about {
   @apply flex-1 py-8 px-6 text-center transition-transform hover:scale-105;
+
+  &:hover {
+    i {
+      @apply scale-150;
+    }
+  }
 
   i {
     @apply text-4xl md:text-5xl scale-125 text-accent-300 transition-transform;
@@ -14,72 +22,18 @@
   }
 }
 
-.card--about:hover {
-  i {
-    @apply scale-150;
-  }
-}
-
-.top-divider-skills {
-  position: absolute;
-  left: 0;
-  top: -81px;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.top-divider-skills svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 82px;
-}
-
-.top-divider-skills .shape-fill {
+.divider-skills-top {
+  @include divider($height: 82px, $width: 100%, $transform: rotate(180deg), $top: true);
   @apply fill-secondary-400;
 }
 
-.bottom-divider-skills {
-  position: absolute;
-  bottom: -82px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.bottom-divider-skills svg {
-  position: relative;
-  display: block;
-  width: calc(140% + 1.3px);
-  height: 82px;
-}
-
-.bottom-divider-skills .shape-fill {
+.divider-skills-bottom {
+  @include divider($height: 82px, $width: 140%, $bottom: true);
   @apply fill-secondary-600;
 }
 
-
-.top-divider-contact {
-  position: absolute;
-  top: -69px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.top-divider-contact svg {
-  position: relative;
-  display: block;
-  width: calc(200% + 1.3px);
-  height: 70px;
-}
-
-.top-divider-contact .shape-fill {
+.divider-contact {
+  @include divider($height: 70px, $width: 200%, $transform: rotate(180deg), $top: true);
   @apply fill-secondary-500;
 }
 
@@ -125,7 +79,7 @@
     @apply text-6xl;
   }
 
-  h2{
+  h2 {
     @apply text-white/90;
   }
 }

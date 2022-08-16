@@ -1,25 +1,11 @@
+@import "~src/styles";
+
 .top-divider-footer {
-  position: absolute;
-  left: 0;
-  top: -69px;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.top-divider-footer svg {
-  position: relative;
-  display: block;
-  width: calc(400% + 1.3px);
-  height: 70px;
-}
-
-.top-divider-footer .shape-fill {
+  @include divider($height: 70px, $width: 400%, $transform: rotate(180deg), $top: true);
   @apply fill-gray-800;
 }
 
-a {
+footer a {
   @apply cursor-pointer;
 }
 

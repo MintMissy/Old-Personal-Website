@@ -66,12 +66,30 @@ p {
   bg-gradient-to-br from-gray-800 to-gray-800/50 relative
   hover:from-gray-700/70 hover:to-gray-700/50
   before:absolute before:left-0 before:inset-y-0 before:w-1 before:h-full before:z-10 before:bg-gradient-to-b before:hidden;
-}
 
-.chip.active {
-  @apply before:block before:from-primary-400 before:to-secondary-500;
+  &.active{
+    @apply before:block before:from-primary-400 before:to-secondary-500;
+  }
 }
 
 .card {
   @apply bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg drop-shadow-lg;
+}
+
+@mixin divider($height, $width, $transform: unset, $top:false, $bottom:false) {
+  @apply absolute left-0 w-full overflow-hidden;
+  line-height: 0;
+  transform: $transform;
+  @if $top {
+    top: -1 * ($height - 1);
+  }
+  @if $bottom {
+    bottom: -1 * ($height - 1);
+  }
+
+  svg {
+    @apply relative block;
+    width: calc($width + 1.3px);
+    height: $height;
+  }
 }
