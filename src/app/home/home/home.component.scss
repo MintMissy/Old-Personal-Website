@@ -3,7 +3,7 @@
 }
 
 .card--about {
-  @apply bg-gradient-to-br flex-1 from-gray-800 to-gray-900 py-8 px-6 rounded-lg text-center shadow-2xl transition-transform hover:scale-105;
+  @apply flex-1 py-8 px-6 text-center transition-transform hover:scale-105;
 
   i {
     @apply text-4xl md:text-5xl scale-125 text-accent-300 transition-transform;
@@ -17,5 +17,115 @@
 .card--about:hover {
   i {
     @apply scale-150;
+  }
+}
+
+.top-divider-skills {
+  position: absolute;
+  left: 0;
+  top: -81px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.top-divider-skills svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 82px;
+}
+
+.top-divider-skills .shape-fill {
+  @apply fill-secondary-400;
+}
+
+.bottom-divider-skills {
+  position: absolute;
+  bottom: -82px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.bottom-divider-skills svg {
+  position: relative;
+  display: block;
+  width: calc(140% + 1.3px);
+  height: 82px;
+}
+
+.bottom-divider-skills .shape-fill {
+  @apply fill-secondary-600;
+}
+
+
+.top-divider-contact {
+  position: absolute;
+  top: -69px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.top-divider-contact svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 70px;
+}
+
+.top-divider-contact .shape-fill {
+  @apply fill-secondary-500;
+}
+
+.skills-image {
+  max-width: 190px;
+  height: auto;
+}
+
+.card--skill {
+  @apply rounded-md;
+
+  img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    @media sm {
+      height: 200px;
+    }
+  }
+
+  div {
+    @apply px-8 py-4;
+
+    h2 {
+      @apply text-white/90;
+    }
+
+    p {
+      @apply pt-2;
+    }
+
+    i {
+      @apply align-middle mb-1 mr-1;
+    }
+  }
+}
+
+.card--experience {
+  @apply p-4 text-center;
+
+  i {
+    @apply text-6xl;
+  }
+
+  h2{
+    @apply text-white/90;
   }
 }

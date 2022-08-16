@@ -11,7 +11,8 @@ module.exports = {
         'primary': colors.green,
         'secondary': colors.blue,
         'accent': colors.amber,
-        'navy': '#151e36'
+        'navy': '#151e36',
+        'navy-light': '#121f30'
       }
     },
     screens: {

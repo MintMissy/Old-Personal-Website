@@ -46,7 +46,7 @@ p {
   -webkit-background-clip: text;
 }
 
-.active-link{
+.active-link {
   @apply text-accent-400;
   background: unset;
   -webkit-text-fill-color: unset;
@@ -58,4 +58,20 @@ p {
   bg-accent-300 py-2 px-4 text-gray-900 font-semibold rounded-md shadow-md cursor-pointer transition-transform
   hover:scale-105
   focus:bg-accent-400 focus:outline-none focus:scale-100;
+}
+
+.chip {
+  @apply
+  py-2 px-4 text-white/95 text-lg rounded-sm shadow-md cursor-pointer transition-all
+  bg-gradient-to-br from-gray-800 to-gray-800/50 relative
+  hover:from-gray-700/70 hover:to-gray-700/50
+  before:absolute before:left-0 before:inset-y-0 before:w-1 before:h-full before:z-10 before:bg-gradient-to-b before:hidden;
+}
+
+.chip.active {
+  @apply before:block before:from-primary-400 before:to-secondary-500;
+}
+
+.card {
+  @apply bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg drop-shadow-lg;
 }

@@ -1,0 +1,34 @@
+.top-divider-footer {
+  position: absolute;
+  left: 0;
+  top: -69px;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.top-divider-footer svg {
+  position: relative;
+  display: block;
+  width: calc(400% + 1.3px);
+  height: 70px;
+}
+
+.top-divider-footer .shape-fill {
+  @apply fill-gray-800;
+}
+
+a {
+  @apply cursor-pointer;
+}
+
+.footer-section {
+  h2 {
+    @apply pb-2;
+  }
+
+  li a {
+    @apply text-white/60 hover:text-white/90 mb-1;
+  }
+}
