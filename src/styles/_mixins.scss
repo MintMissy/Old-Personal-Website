@@ -1,0 +1,17 @@
+@mixin divider($height, $width, $transform: unset, $top:false, $bottom:false) {
+  @apply absolute left-0 w-full overflow-hidden;
+  line-height: 0;
+  transform: $transform;
+  @if $top {
+    top: -1 * ($height - 1);
+  }
+  @if $bottom {
+    bottom: -1 * ($height - 1);
+  }
+
+  svg {
+    @apply relative block;
+    width: calc($width + 1.3px);
+    height: $height;
+  }
+}
