@@ -13,7 +13,8 @@
       <ul class="hidden md:flex gap-8 p-4 text-lg">
         <li *ngFor="let link of links; let i = index;" class="underline-animation">
           <a [routerLink]="link.route">
-            <span aria-hidden="true" class="font-bold text-gradient" routerLinkActive="active-link">0{{i + 1}}</span>
+            <span aria-hidden="true" class="font-bold text-gradient" routerLinkActive="active-link"
+                  [routerLinkActiveOptions]="{exact:true}">0{{i + 1}}</span>
             {{link.text}}
           </a>
         </li>

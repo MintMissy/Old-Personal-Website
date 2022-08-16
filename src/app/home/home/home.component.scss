@@ -5,16 +5,14 @@
 }
 
 .card--about {
-  @apply flex-1 py-8 px-6 text-center transition-transform hover:scale-105;
-
-  &:hover {
-    i {
-      @apply scale-150;
-    }
-  }
+  @apply flex-1 py-8 px-6 text-center transition-transform;
 
   i {
     @apply text-4xl md:text-5xl scale-125 text-accent-300 transition-transform;
+  }
+
+  &:hover i {
+    @apply scale-150;
   }
 
   h2 {
