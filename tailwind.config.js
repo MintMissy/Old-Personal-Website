@@ -10,7 +10,6 @@ module.exports = {
       colors: {
         'primary': colors.green,
         'secondary': colors.blue,
-        'accent': colors.amber,
         'navy': '#151e36',
         'navy-light': '#121f30'
       }

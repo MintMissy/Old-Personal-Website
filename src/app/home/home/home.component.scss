@@ -8,7 +8,7 @@
   @apply flex-1 py-8 px-6 text-center transition-transform;
 
   i {
-    @apply text-4xl md:text-5xl scale-125 text-accent-300 transition-transform;
+    @apply text-4xl md:text-5xl scale-125 text-primary-300 transition-transform;
   }
 
   &:hover i {
