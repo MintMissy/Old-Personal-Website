@@ -69,13 +69,12 @@
           <!-- SKILLS CONTENT-->
           <div>
             <h1 class="header-decoration text-white">My Skills</h1>
-            <p class="pt-4 sm:max-w-md text-white/95">Few Words About Me is simply dummy text of the printing and
+            <p class="pt-4 md:max-w-md text-white/95">Few Words About Me is simply dummy text of the printing and
               typesetting industry.
               Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam architecto asperiores, consectetur
-              deleniti dolor eos fuga itaque libero optio quibusdam reiciendis repudiandae saepe voluptatem voluptatum!
-              Dignissimos officia ratione repellendus.
+              deleniti dolor eos fuga itaque libero optio
             </p>
           </div>
           <div class="hidden md:flex align-middle justify-center flex-1">
@@ -99,7 +98,7 @@
       </div>
     </div>
     <!-- MY SKILLS - 3 SKILLS -->
-    <div class="container grid mt-32 gap-4 sm:mt-80 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
+    <div class="container grid mt-16 gap-4 sm:mt-64 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
       <div class="card card--skill">
         <img src="./assets/images/home/skill-web-development.avif" alt="" aria-hidden="true">
         <div>
@@ -160,7 +159,7 @@
       </div>
     </div>
   </div>
-  <div class="mt-24 relative bg-gradient-to-b from-secondary-500 to-secondary-400 pb-16">
+  <div class="mt-24 md:mt-64 relative bg-gradient-to-b from-secondary-500 to-secondary-400 pb-20 min-h-[200px]">
     <div class="divider-contact">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path
@@ -174,12 +173,22 @@
           class="shape-fill"></path>
       </svg>
     </div>
-    <div class="container">
-      <h1>Contact Me</h1>
-      <p class="text-white/90 mt-4 max-w-xl">There are many variations of passages of Lorem Ipsum available, but the
-        majority have suffered alteration in
-        some form, by injected humour, or randomised words which don't look even slightly believable</p>
-      <button class="btn my-4" routerLink="/contact">Write a Message</button>
+    <div class="container relative z-10 md:left-0 md:right-0 md:absolute md:top-[-100%]">
+      <div class="card max-w-[1000px] mx-auto p-8 flex gap-8">
+        <div>
+          <h1 class="header-decoration">Contact Me</h1>
+          <p class="text-white/90 mt-4 max-w-xl">There are many variations of passages of Lorem Ipsum available, but the
+            majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable</p>
+          <div class="mt-4 flex gap-4">
+            <button class="btn" routerLink="/contact">Get in Touch</button>
+            <button class="btn btn-dark" routerLink="/contact">Social Media</button>
+          </div>
+        </div>
+        <div class="hidden md:flex align-middle justify-center flex-1">
+          <img class="skills-image" src="./assets/images/home/my-skills.png" alt="" aria-hidden="true">
+        </div>
+      </div>
     </div>
   </div>
 </div>
