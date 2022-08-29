@@ -1,4 +1,4 @@
-<div class="">
+<div>
   <!--  HOME HERO-->
   <div class="bg-gradient-to-r from-navy to-gray-900 via-gray-900 pb-8 md:pb-32 sm:pt-20">
     <div class="relative md:flex container">
@@ -49,7 +49,7 @@
   </div>
   <!--  MY SKILLS -->
   <div class="relative -mt-24">
-    <div class="relative z-10 pt-16 sm:pt-0 bg-gradient-to-b from-secondary-400 to-secondary-600">
+    <div class="relative z-10 sm:pt-16 min-h-[200px] sm:pt-0 bg-gradient-to-b from-secondary-400 to-secondary-600">
       <!-- SKILLS TOP DIVIDER -->
       <div class="divider-skills-top">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -64,19 +64,23 @@
             class="shape-fill"></path>
         </svg>
       </div>
-      <div class="container justify-center flex flex-col-reverse gap-8 sm:flex-row md:gap-24">
-        <!-- SKILLS IMAGE-->
-        <div class="flex align-middle justify-center md:justify-end flex-1 mt-16">
-          <img class="skills-image" src="./assets/images/home/my-skills.png" alt="" aria-hidden="true">
-        </div>
-        <!-- SKILLS CONTENT-->
-        <div class="flex-1 mt-16">
-          <h1 class="text-white">My Skills</h1>
-          <p class="pt-4 sm:max-w-md text-white/95">Few Words About Me is simply dummy text of the printing and
-            typesetting industry.
-            Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s
-          </p>
+      <div class="container sm:absolute top-0 left-0 right-0 z-10 mt-24">
+        <div class="max-w-[1000px] card p-8 flex gap-8 mx-auto">
+          <!-- SKILLS CONTENT-->
+          <div>
+            <h1 class="header-decoration text-white">My Skills</h1>
+            <p class="pt-4 sm:max-w-md text-white/95">Few Words About Me is simply dummy text of the printing and
+              typesetting industry.
+              Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam architecto asperiores, consectetur
+              deleniti dolor eos fuga itaque libero optio quibusdam reiciendis repudiandae saepe voluptatem voluptatum!
+              Dignissimos officia ratione repellendus.
+            </p>
+          </div>
+          <div class="hidden md:flex align-middle justify-center flex-1">
+            <img class="skills-image" src="./assets/images/home/my-skills.png" alt="" aria-hidden="true">
+          </div>
         </div>
       </div>
       <!-- SKILLS BOTTOM DIVIDER-->
@@ -95,7 +99,7 @@
       </div>
     </div>
     <!-- MY SKILLS - 3 SKILLS -->
-    <div class="container grid mt-28 gap-4 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
+    <div class="container grid mt-32 gap-4 sm:mt-80 sm:grid-cols-2 md:gap-8 lg:grid-cols-3">
       <div class="card card--skill">
         <img src="./assets/images/home/skill-web-development.avif" alt="" aria-hidden="true">
         <div>
