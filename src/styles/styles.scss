@@ -68,7 +68,7 @@ p {
   @apply bg-secondary-400 text-white;
 }
 
-.btn-dark{
+.btn-dark {
   @apply bg-gradient-to-br from-gray-700 to-gray-800 rounded-lg text-white;
 }
 
@@ -90,4 +90,18 @@ p {
 
 .card {
   @apply bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg drop-shadow-lg;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+  @apply bg-gray-700/90 p-2 px-3 rounded-md w-full;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  @apply bg-gray-600 outline-0;
 }

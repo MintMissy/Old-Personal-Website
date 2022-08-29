@@ -1,7 +1,7 @@
 @import "mixins";
 
 .container {
-  @apply p-4 pt-8 md:p-8;
+  @apply pb-4 px-4 pt-8 md:p-8;
 }
 
 .card--about {

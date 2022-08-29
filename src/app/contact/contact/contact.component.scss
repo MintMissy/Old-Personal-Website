@@ -1,0 +1,15 @@
+.container {
+  @apply pb-4 px-4 pt-8 md:p-8;
+}
+
+.input-group {
+  @apply w-full;
+
+  label, input, textarea {
+    display: block;
+  }
+
+  label {
+    @apply text-white/90 mb-1;
+  }
+}
