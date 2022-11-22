@@ -1,0 +1,11 @@
+<article class="max-w-sm rounded-md overflow-hidden shadow-xl">
+  <div
+    class="h-48 bg-cover bg-no-repeat bg-center"
+    [style]="'background-image: url(\'' + image + '\');'"
+  ></div>
+  <div class="p-4 pb-6 bg-slate-800">
+    <h1 class="text-xl">{{ title }}</h1>
+    <p class="mb-6 mt-1 text-base">{{ description }}</p>
+    <a class="btn text-base" [href]="link">View Project</a>
+  </div>
+</article>
